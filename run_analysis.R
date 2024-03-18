@@ -1,10 +1,16 @@
-path <- getwd()
-url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(url, file.path(path, "Data.zip"))
+folder <- 'UCI HAR Dataset'
+zip_file <- 'Data.zip'
 
-if (!file.exists("UCI HAR Dataset")) { 
-     unzip("Data.zip") 
+if(!file.exists(folder)) {
+  if(!file.exists(zip_file)) {
+    download.file(
+      'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip',
+      zip_file
+    )
+  }
+  unzip(zip_file)
 }
+
 test_data <- read.table(file.path(folder, 'test', 'X_test.txt'))
 test_activity <- read.table(file.path(folder, 'test', 'y_test.txt'))
 test_subject <- read.table(file.path(folder, 'test', 'subject_test.txt'))
