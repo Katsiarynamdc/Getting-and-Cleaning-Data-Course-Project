@@ -1,4 +1,4 @@
-Hello everybody who is looking at my project. 
+Hello everybody who is looking at my project!
 
 I performed next activities UCI HAR Dataset:
 
