@@ -1,0 +1,35 @@
+My variables:
+
+folder: This variable stores the name of the folder where the UCI HAR dataset is located or will be extracted.
+
+zip_file: It holds the name of the zip file containing the UCI HAR dataset.
+
+test_data: This variable stores the data from the test set, specifically the sensor measurements.
+
+test_activity: It contains the activity labels corresponding to the test set observations.
+
+test_subject: This variable stores the subject identifiers for the test set observations.
+
+train_data: Similar to test_data, but for the training set.
+
+train_activity: Similar to test_activity, but for the training set.
+
+train_subject: Similar to test_subject, but for the training set.
+
+data_all: It combines both the test and training data into a single dataset.
+
+activity_all: It combines the activity labels from both test and training sets.
+
+subject_all: It combines the subject identifiers from both test and training sets.
+
+all_data: This variable combines all the data, activity, and subject information into a single dataset.
+
+feat: It stores the features of the dataset, which include various sensor measurements.
+
+req_features: This variable contains the indices of the features that represent mean and standard deviation measurements.
+
+activities: It stores the descriptive labels for the activities performed in the dataset.
+
+final_melted: This variable holds the reshaped data in long format, with subject and activity as ID variables.
+
+final_avg: It stores the final dataset with averaged values of features for each subject-activity combination.
